@@ -33,6 +33,12 @@ fn main() {
         }
 
         health -= 1;
+
+        if health <= 0 {
+            println!("Game over");
+            println!("Secret number: {secret_number}");
+            return;
+        }
         println!("Your current guess left: {health}");
     }
 
